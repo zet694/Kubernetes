@@ -1,0 +1,7 @@
+environment: development
+container:
+  name: demo
+  port: 8888
+  image: zet694/simple-web-app
+  tag: 0.1
+replicas: 1
