@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo
+  annotations:
+    zet694.github.io: "Test annotation"
 spec:
   replicas: 1
   selector:
@@ -11,12 +13,13 @@ spec:
     metadata:
       labels:
         app: demo
+        owner: zet694
     spec:
       containers:
         - name: demo
           image: zet694/simple-web-app:0.1
           ports:
-          - containerPort: 8888
+            - containerPort: 8888
           resources:
             requests:
               memory: "10Mi"
