@@ -19,3 +19,10 @@ spec:
           image: zet694/simple-web-app:0.1
           ports:
           - containerPort: 8888
+          livenessProbe:
+            httpGet:
+              port: 8888
+              path: /healthz
+            initialDelaySeconds: 5
+            periodSeconds: 3
+            failureThreshold: 3
