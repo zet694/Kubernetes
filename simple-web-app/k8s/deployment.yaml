@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: demo
-          image: zet694/simple-web-app:0.1
+          image:  nginx:1.19.0
           ports:
           - containerPort: 8888
           livenessProbe:
