@@ -15,6 +15,6 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         logout: true
     - name: Build the Docker image
-      run: docker build simple-web-app --file Dockerfile --tag zet694/simple-web-app:latest
+      run: docker build simple-web-app --file simple-web-app/Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/simple-web-app:latest
     - name: Docker Push
       run: docker push zet694/simple-web-app:latest
