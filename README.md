@@ -2,6 +2,12 @@
 
 ## Hints:
 
+### Autocompletion on: 
+
+```
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+```
+
 ### Short names:
 
 | Short name           | Full name                    |
