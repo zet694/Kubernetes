@@ -12,7 +12,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Fprintln(w, "Hostname: ", hostname)
+	fmt.Fprintln(w ,"Hostname: ", hostname)
 }
 
 func main() {
